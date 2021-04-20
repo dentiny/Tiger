@@ -1,0 +1,11 @@
+let
+  type intlist = {elem: int, rest: intlist}
+  /* type T = {elem: int, rest: intlist} */
+  type T = intlist
+  var v1: intlist := intlist{elem = 2, rest = nil}
+  var v2: T := T{elem = 2, rest = nil}
+  var v3: intlist := v1
+in
+  v1 = v3
+  /* "aaa" < "bbb" */
+end

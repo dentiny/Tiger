@@ -1,0 +1,16 @@
+.cm
+*.out
+*.s
+!regalloc/*.s
+parser/.cm
+semantic/.cm
+intermediate/.cm
+instruction/.cm
+liveness/.cm
+regalloc/.cm
+parser/*.out
+semantic/*.out
+intermediate/*.out
+instruction/*.out
+liveness/*.out
+regalloc/*.out

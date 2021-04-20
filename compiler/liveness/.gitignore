@@ -1,0 +1,13 @@
+.cm
+*.out
+arser/.cm
+semantic/.cm
+intermediate/.cm
+instruction/.cm
+liveness/.cm
+parser/*.out
+semantic/*.out
+intermediate/*.out
+instruction/*.out
+*.s
+*.out

@@ -1,0 +1,11 @@
+How to run parser:
+ - Compile and build SML parser:
+       CM.make "sources.cm";
+ - Parse the file you want:
+       Parse.parse "*.tig";
+ - Print the AST
+       PrintAbsyn.print(TextIO.stdOut, Parse.parse "*.tig");
+
+How to test thoroughly:
+ - ./autotest.sh to examine grammer
+ - ./autoprint.sh to test AST structure visually

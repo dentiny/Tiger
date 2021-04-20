@@ -1,0 +1,15 @@
+let
+    var k := 5
+    var j := 6
+    var g := j + 12
+    var h := k - 1
+    /*var f := g * h
+    var e := j + 8
+    var m := j + 16
+    var b := f + 1
+    var c := e + 8
+    var d := c*/
+in
+	/*k := m + 4;
+    j := b*/
+end

@@ -1,0 +1,17 @@
+let
+    var
+in
+    let
+        type rectype={}
+        var a:=5
+        var b:=rectype {}
+        type d=a
+        type a=d
+    in
+    end;
+5;
+();
+let
+in
+end
+end

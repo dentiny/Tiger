@@ -1,0 +1,11 @@
+/*
+  This testcase is for nested record and array.
+*/
+
+let
+  type intArray = array of int
+  type recType = {name : intArray}
+  var v:recType := recType{name = intArray [1] of 1}
+in
+  v.name[0]
+end

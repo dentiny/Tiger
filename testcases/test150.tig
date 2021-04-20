@@ -1,0 +1,8 @@
+/* broken record with primitive types only */
+let
+	type  rectype = {name:string, age:int}
+	var rec1:rectype := rectype {name="Nobody", name="hao"}
+in
+	rec1.name := "Somebody";
+	rec1
+end

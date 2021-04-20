@@ -1,0 +1,16 @@
+let
+  function do_nothing1(a: int, b: string)=
+      do_nothing2(a+1)
+
+  function do_nothing2(d: int) =
+      do_nothing1(d, "str")
+in
+  while(10 > 5) do 
+    (
+      print("hello world");
+      /* do_nothing2(20); */
+      break
+    )
+end
+  
+  

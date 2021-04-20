@@ -1,0 +1,10 @@
+parser/.cm
+semantic/.cm
+intermediate/.cm
+instruction/.cm
+parser/*.out
+semantic/*.out
+intermediate/*.out
+instruction/*.out
+*.s
+*.out

@@ -1,0 +1,18 @@
+How to run lexer:
+ - Compile and build SML lexer:
+       CM.make "sources.cm";
+ - Parse test file (replace * with any number from 0 to 49):
+       Parse.parse "test*.tig";
+
+How to test thoroughly:
+ - run the test script:
+       ./autotest.sh
+ - the outputs will be redirected to .out files
+
+Functionality:
+ - reserved keywords(in total 17) and punctuation symbols(in total 23) are referenced to textbook P32.
+ - nested comment: two states <INITIAL> and <COMMENT>
+ - non-negative integers
+ - identifier
+ - newliner
+ - all other characters are treated illegal

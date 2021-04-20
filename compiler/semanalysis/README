@@ -1,0 +1,8 @@
+How to run type checker:
+ - Compile and build SML parser:
+       CM.make "sources.cm";
+ - Analyze semantics:
+       Main.main "../../testcases/*.tig";
+
+How to test thoroughly:
+ - ./autotest.sh to check semantic correctness

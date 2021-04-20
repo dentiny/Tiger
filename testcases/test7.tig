@@ -1,0 +1,18 @@
+/* define valid mutually recursive functions */
+let
+
+function do_nothing1(a: int, b: string):int=
+		(do_nothing2(a+1); 999)
+
+function do_nothing2(d: int):string =
+		(do_nothing1(d, "str"); "aaa")
+	
+function func() =
+	(
+		if (do_nothing1(0, "str2") = 999) then print("hello")
+		/* print(do_nothing2(10)) */
+	)
+in
+	func()
+end
+

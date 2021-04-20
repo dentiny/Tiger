@@ -1,0 +1,18 @@
+/*
+  This testcase is for nested record.
+*/
+
+let
+  type recType1 = {elem1 : string}
+  type recType2 = {elem2 : recType1}
+  var v1:recType1 := recType1{elem1 = "hello world"}
+  var v2:recType2 := recType2{elem2 = v1}
+  var name:string := v1.elem1
+  var v3:recType1 := recType1{elem1 = "hao"}
+in
+  name := "hao";
+  v1.elem1 := name;
+  /* works fine: v2.elem2 */
+  /* works fine: v2.elem2 := v3 */
+  v2.elem2.elem1
+end

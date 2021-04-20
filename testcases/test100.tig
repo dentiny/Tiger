@@ -1,0 +1,23 @@
+/*
+  This testcase is for multi-dimentional array assignment.
+*/
+
+/* array creation: ID LBRACK exp RBRACK OF exp */
+
+let
+  type intArray = array of int
+
+  var zeroRow:intArray := intArray [1] of 0
+
+  type intArray2D = array of intArray 
+
+  var zeroRow2D:intArray2D := intArray2D [1] of zeroRow
+
+  type intArray3D = array of intArray2D
+
+  var zeroRow3D:intArray3D := intArray3D [1] of zeroRow2D
+in
+  zeroRow3D[0][0][0]
+end
+
+

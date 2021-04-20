@@ -1,0 +1,6 @@
+\
+let str1 := "This is a very long string\a";
+
+let str2 := "This is a very long string\
+			 \";
+rec;

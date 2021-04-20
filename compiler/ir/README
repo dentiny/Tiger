@@ -1,0 +1,25 @@
+How to run type checker:
+ - Compile and build SML parser:
+       CM.make "sources.cm";
+ - Parse the file you want:
+       Parse.parse "*.tig";
+ - Print the AST:
+       PrintAbsyn.print(TextIO.stdOut, Parse.parse "*.tig");
+ - Run the type checker & print IR:
+       Main.main "*.tig";
+
+How to test thoroughly:
+ - ./autotest.sh to check semantic correctness. If type checking passes, the IR will be printed out.
+
+**Optimization** **(extra credit):**
+
+ - implement constant folding on
+      + arithmatic calculation
+            + all arithmatic calculation(binop and relop) between constants are pre-calculated
+      + naive dead code elimination (if-then-else and while control flow)
+            + if predicate for `if` is constant true, execute then
+            + if predicate for `if` is constant false, execute else if exists, otherwise bypass `if` block
+            + if predicate for `while` is constant false, bypass the `while` block
+      + array creation and subscript
+            + calculate the size of creation, and index to access if compile-time constant
+      + related testcase: test8*.tig

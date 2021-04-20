@@ -1,0 +1,59 @@
+/* type decs and variable decs*/
+
+let
+  type arrtype = array of int
+  type intlist = {hd: int, tl: intlist}
+
+  var str := "a\tsf\nas\\\"f\099"
+
+  type tree = {key: int, children: treelist}
+  type treelist = {hd: tree, tl: treelist}
+
+  var arr1: arrtype := arrtype [10] of 0
+
+  /* functions from book */
+
+  function treeLeaves(t : tree) : int =
+    if t=nil then 1
+    else treelistLeaves(t.children)
+
+  function treelistLeaves(L : treelist) : int =
+    if L=nil then 0
+    else treeLeaves(L.hd) + treelistLeaves(L.tl)
+
+  /*This is a /*nested*/ comment*/
+
+    /*this is a /*		
+    nested newline
+    */
+    comment
+    */
+
+function f(v: int) =
+  let
+    var v := 6
+  in
+    print(v);
+    let
+      var v := 7
+    in
+      print (v)
+    end;
+    print(v);
+    let
+      var v := 8
+    in
+      print (v)
+    end;
+    print(v)
+  end
+
+  let longStr := "This is a very long string\    
+
+
+              \ and I want to put this part on a newline\
+              \  and also indent it for some reason"
+
+in
+  arr1
+end
