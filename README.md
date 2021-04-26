@@ -36,20 +36,16 @@ sudo apt-get install ml-lex
 sudo apt-get install ml-yacc
 ```
 
-To compile and run in REPL:
+The final working compiler is at compiler/reg_alloc. To compile and run in REPL:
 ```
 cd compiler/reg_alloc
 CM.make "sources.cm";
 Main.compile <your-tiger-file>
-``` 
-
-```shell
-cd ece553project/compiler/reg_alloc
 ```
 
 To run a single test case:
 
-```shell
+```
 ./autotest.sh xxx.tig
 ```
 
