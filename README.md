@@ -1,8 +1,9 @@
 # ECE553Project
 
-Group members:
+### Contribution:
 
-Tianle Zhang (tz94), Hao Jiang (hj110) and Yuchuan Li (yl645).
+Tianle Zhang(tz94): [TianleZhang](https://github.com/UOETianleZhang)
+Hao Jiang(hj110): [HaoJiang](https://github.com/dentiny)
 
 ### HW1: lexer
 Please see the directory "compiler/lexer".
@@ -26,8 +27,21 @@ Please see the directory "compiler/ins_sel".
 Please see the directory "compiler/reg_alloc".
 
 
-
 ## How to Run
+Install SML-nj and related packages:
+```
+sudo apt-get install smlnj
+sudo apt-get install ml-lex
+sudo apt-get install ml-yacc
+```
+
+To compile and run in REPL:
+```
+cd compiler/reg_alloc
+CM.make "sources.cm";
+Main.compile <your-tiger-file>
+``` 
+
 ```shell
 cd ece553project/compiler/reg_alloc
 ```
